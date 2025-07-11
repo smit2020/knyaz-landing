@@ -1,55 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Княжеский Замок</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Medieval_castle_sunset.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      text-shadow: 1px 1px 2px #000;
-    }
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 20px;
-      min-height: 100vh;
-    }
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    p {
-      max-width: 600px;
-      margin: 20px auto;
-      font-size: 1.2em;
-      text-align: center;
-    }
-    .button {
-      display: block;
-      margin: 40px auto;
-      padding: 15px 30px;
-      background-color: #8b0000;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background-color: #a00000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Княжеский Пир</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f5f0e6;
+            color: #2e1c0f;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1616181741113-e6e5f9081c7a') center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            text-shadow: 2px 2px 6px black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .button {
+            background-color: #a52a2a;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            border: 3px solid #5b3c1c;
+        }
+        footer {
+            background-color: #2e1c0f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Княжеский Замок</h1>
-    <p>Добро пожаловать в мир средневековой истории, славы и гостеприимства! Узнайте больше о нашем проекте — погрузитесь в атмосферу настоящего княжеского пира и культурного наследия.</p>
-    <a href="#" class="button">Оставить заявку</a>
-  </div>
+
+<header>
+    <h1>Княжеский Пир</h1>
+    <h2>Там, где история оживает!</h2>
+    <a href="#form" class="button">Оставить заявку</a>
+</header>
+
+<section>
+    <h2>О проекте</h2>
+    <p>«Княжеский Пир» — это уникальный гастрономический и культурный опыт в духе древнерусских традиций. Здесь сочетаются историческая реконструкция, изысканная кухня и интерактивные представления для всей семьи.</p>
+</section>
+
+<section>
+    <h2>Галерея</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="feast">
+        <img src="https://images.unsplash.com/photo-1616628182504-3b38d0047f68" alt="hall">
+        <img src="https://images.unsplash.com/photo-1602437369646-843d5a41302d" alt="food">
+    </div>
+</section>
+
+<section id="form">
+    <h2>Заявка на участие</h2>
+    <p>Оставьте ваши контакты, и мы свяжемся с вами в ближайшее время. (Форма в разработке)</p>
+</section>
+
+<footer>
+    &copy; 2025 Княжеский Пир. Все права защищены.
+</footer>
+
 </body>
 </html>
